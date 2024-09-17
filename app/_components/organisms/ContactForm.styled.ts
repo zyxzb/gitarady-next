@@ -56,7 +56,6 @@ export const Wrapper = styled.form`
     width: 100%;
   }
   input {
-    margin-bottom: 10px;
     width: 100%;
     height: 40px;
   }
@@ -67,6 +66,13 @@ export const Wrapper = styled.form`
   button {
     position: relative;
     bottom: -30px;
+  }
+  .input-box {
+    margin-bottom: 10px;
+  }
+  .error {
+    color: var(--main-color);
+    font-size: 14px;
   }
   @media (min-width: 576px) {
     padding: 30px;
