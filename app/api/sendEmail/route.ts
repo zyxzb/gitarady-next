@@ -1,3 +1,5 @@
+/* eslint @typescript-eslint/no-var-requires: "off" */
+
 import { NextResponse } from 'next/server';
 const nodemailer = require('nodemailer');
 
@@ -34,6 +36,7 @@ export async function POST(request: Request) {
 
     // await for response
     await new Promise((resolve, reject) => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       transporter.sendMail(mailOption, function (err: any, info: any) {
         if (err) {
           console.error('Error mailOption:', err);
