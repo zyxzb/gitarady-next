@@ -23,12 +23,18 @@ const Videos = () => {
           title='Shape of You by Ed Sheeran in 4 Steps'
           frameBorder='0'
           allowFullScreen
+          aria-hidden='true'
+          tabIndex={-1}
+          loading='lazy'
         ></iframe>
         <iframe
           src='https://www.youtube.com/embed/UJ9eGN6SHFM'
           title='Improwizacja Am'
           frameBorder='0'
           allowFullScreen
+          aria-hidden='true'
+          tabIndex={-1}
+          loading='lazy'
         ></iframe>
       </div>
     </Wrapper>
