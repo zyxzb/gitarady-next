@@ -1,7 +1,5 @@
-'use client';
-
 import Link from 'next/link';
-import { Wrapper } from './ArticleCard.styled';
+import { Wrapper } from '../organisms/ArticleCard.styled';
 import { ArticleCardType } from '@/app/_types';
 import Image from 'next/image';
 import { useState } from 'react';

@@ -6,9 +6,9 @@ import { Wrapper } from './Blog.styled';
 import { All_BLOG_POSTS_QUERY } from '../_utils/queries';
 import { PostType } from '../_types';
 import PaginationSection from '../_components/molecules/PaginationSection';
-import ArticleSectionWrapper from '../_components/molecules/ArticleSectionWrapper';
+import ArticleCards from '../_components/organisms/ArticleCards';
 
-export const revalidate = 60;
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: 'Gitarady - Blog',
@@ -36,7 +36,7 @@ const Page = async () => {
 
   return (
     <Wrapper className='section section-center'>
-      <ArticleSectionWrapper />
+      <ArticleCards />
       <PaginationSection articles={articles} />
     </Wrapper>
   );

@@ -19,6 +19,15 @@ export const All_BLOG_POSTS_QUERY = `
     }
 }`;
 
+export const PRICING_QUERY = `
+  query Pricing {
+    allPricings {
+      option1
+      option2
+      option3
+  }
+}`;
+
 export const getData = async (slug: string) => {
   const BLOG_POSTS_QUERY = `query MyQuery {
     article(filter: {slug: {eq: "${slug}"}}) {

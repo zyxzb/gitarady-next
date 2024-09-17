@@ -12,6 +12,12 @@ export type PostType = {
   date?: string | Date;
 };
 
+export type PricingType = {
+  option1: string;
+  option2: string;
+  option3: string;
+};
+
 export type SeoTags = {
   title: string;
   description: string;

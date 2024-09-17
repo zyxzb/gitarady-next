@@ -8,6 +8,8 @@ import { All_BLOG_POSTS_QUERY, getData } from '@/app/_utils/queries';
 import { PostType } from '@/app/_types';
 import ImageWithPlaiceholder from '@/app/_components/atoms/ImageWithPlaiceholder';
 
+export const revalidate = 300;
+
 async function getAllArticles(query: string) {
   const { allArticles } = await performRequest<{ allArticles: PostType[] }>(
     query,

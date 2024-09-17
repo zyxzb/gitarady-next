@@ -54,7 +54,7 @@ export const Wrapper = styled.div`
       &::after {
         position: absolute;
         content: '';
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         background-image: linear-gradient(
           to bottom,
