@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import image from '../../_images/mono2.png';
+import image from '@/app/public/images/mono2.png';
 import { Wrapper } from './Hero.styled';
 
 const Hero = () => {
