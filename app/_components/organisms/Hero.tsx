@@ -12,13 +12,14 @@ const Hero = () => {
           <Image
             src={image}
             alt='banner - osoba z gitarą'
-            fill
             placeholder='empty'
             style={{
               opacity: 0.95,
               objectFit: 'contain',
             }}
             sizes='(max-width: 768px) 100vw, 50vw'
+            fill
+            priority={true}
           />
         </div>
         <div className='info'>
