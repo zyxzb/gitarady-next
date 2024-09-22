@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: 'Gitarady - Cennik',
   description:
     'Indywidualne lekcje instrumentu są najprzyjemniejszą, najszybszą i najbardziej skuteczną formą nauki gry na gitarze. Dzięki indywidualnemu podejściu do lekcji szybko osiągniesz zamierzone cele muzyczne',
+  alternates: {
+    canonical: `${process.env.NEXT_DOMAIN}/cennik`,
+  },
 };
 
 const Page = async () => {

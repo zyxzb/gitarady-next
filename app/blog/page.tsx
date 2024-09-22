@@ -12,6 +12,9 @@ export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: 'Gitarady - Blog',
+  alternates: {
+    canonical: `${process.env.NEXT_DOMAIN}/blog`,
+  },
 };
 
 const Page = async () => {

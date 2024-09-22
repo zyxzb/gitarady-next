@@ -10,6 +10,9 @@ const nagraniaSubtitle =
 export const metadata: Metadata = {
   title: 'Gitarady - Nagrania',
   description: nagraniaSubtitle,
+  alternates: {
+    canonical: `${process.env.NEXT_DOMAIN}/nagrania`,
+  },
 };
 
 const Page = () => {

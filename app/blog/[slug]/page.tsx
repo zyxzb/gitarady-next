@@ -26,6 +26,9 @@ export const generateMetadata = async ({
   return {
     title: `${article.seoTags.title} - Gitarady`,
     description: article.seoTags.description,
+    alternates: {
+      canonical: `${process.env.NEXT_DOMAIN}/${params.slug}`,
+    },
   };
 };
 
@@ -50,7 +53,6 @@ const Page = async ({ params }: { params: { slug: string } }) => {
     content,
     date,
     image: { url },
-    slug,
   } = article;
 
   return (
@@ -61,7 +63,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
       </div>
       <div className='center section'>
         <div className='image-wrapper'>
-          <ImageWithPlaiceholder src={url} alt={slug} fill objectFit='cover' />
+          <ImageWithPlaiceholder src={url} alt={title} fill objectFit='cover' />
         </div>
         <div className='text-wrapper'>
           <div dangerouslySetInnerHTML={{ __html: paragraphShort }} />

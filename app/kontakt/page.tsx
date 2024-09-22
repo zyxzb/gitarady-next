@@ -10,6 +10,9 @@ const kontaktSubtitle = `Zapraszamy do kontaktu bezpośredniegu lub poprzez poni
 export const metadata: Metadata = {
   title: 'Gitarady - Kontakt',
   description: kontaktSubtitle,
+  alternates: {
+    canonical: `${process.env.NEXT_DOMAIN}/kontakt`,
+  },
 };
 
 const Page = () => {
