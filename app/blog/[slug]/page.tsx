@@ -27,7 +27,7 @@ export const generateMetadata = async ({
     title: `${article.seoTags.title} - Gitarady`,
     description: article.seoTags.description,
     alternates: {
-      canonical: `${process.env.NEXT_DOMAIN}/${params.slug}`,
+      canonical: `${process.env.NEXT_DOMAIN}/blog/${params.slug}`,
     },
   };
 };
